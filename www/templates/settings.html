@@ -1,0 +1,34 @@
+<ion-view title="Settings" id="page4">
+  <ion-content padding="true" class="has-header">
+    <div class="list card" id="settings-card22">
+      <h3 id="settings-heading3" style="color:#000000;font-style:italic;" class="setting-h3">{{ 'search_title' | translate }}</h3>
+      <form id="settings-form2" class="list">
+        <ion-item class="range range-positive" id="settings-range1">{{ ('duration' | translate) + settings.scanDuration + 's' }}
+          <input type="range" value="5" min="1" max="10" step="1" name="scan_duration" ng-model="settings.scanDuration" ng-change="onScanDurationDrag()">
+        </ion-item>
+      </form>
+    </div>
+    <div class="list card" id="settings-card24">
+      <h3 id="settings-heading6" style="color:#000000;font-style:italic;" class="setting-h3">{{ 'update_title' | translate }}</h3>
+      <form id="settings-form5" class="list">
+        <ion-item class="range range-positive" id="settings-range3">{{ ('duration' | translate) + settings.refreshInterval + 's' }}
+          <input type="range" value="5" min="1" max="10" step="1" name="refresh_interval" ng-model="settings.refreshInterval" ng-change="onRefreshIntervalDrag()">
+        </ion-item>
+      </form>
+    </div>
+    <div class="list card" id="settings-card23">
+      <h3 id="settings-heading5" style="color:#000000;font-style:italic;" class="setting-h3">{{ 'notification_title' | translate }}</h3>
+      <form id="settings-form4" class="list">
+        <ion-toggle toggle-class="toggle-balanced" id="settings-toggle1" ng-model="settings.vibration" ng-change="onVibrationChange()">{{ 'vibration' | translate }}</ion-toggle>
+        <ion-toggle toggle-class="toggle-balanced" id="settings-toggle2" ng-model="settings.sound" ng-change="onSoundChange()">{{ 'beeps' | translate }}</ion-toggle>
+      </form>
+    </div>
+    <div class="list card" id="settings-card210">
+      <h3 id="settings-heading12" style="color:#000000;font-style:italic;" class="setting-h3">{{ 'language_title' | translate }}</h3>
+      <form id="settings-form9" class="list">
+        <ion-radio id="settings-radio3" name="settings.language" ng-model="settings.language" value="en" ng-change="onLanguageChange()">English</ion-radio>
+        <ion-radio id="settings-radio5" name="settings.language" ng-model="settings.language" value="fr" ng-change="onLanguageChange()">Français</ion-radio>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

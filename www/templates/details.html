@@ -1,0 +1,37 @@
+<ion-view title="Details" id="page5">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button icon No Icon" ng-class="added ? 'ion-android-favorite' : 'ion-android-favorite-outline'" ng-click="onFavoriteChange()" ng-show="device"></button>
+  </ion-nav-buttons>
+  <ion-content padding="false" class="has-header">
+    <div id="details-container1" ng-show="connected">
+      <div align="center" style="margin-top: 45px; margin-bottom: 45px;">
+        <div class="container">
+          <div class="pulse flex-container" style="color: white; text-align: center;">
+            <span style="font-size: 30px;">{{ device.distance &gt;= 0 ? device.distance + '\nm' : 'Trop loin' }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card" id="details-card28">
+      <ion-item class="item-icon-left item-icon-right calm" id="details-list-item14">
+        <i class="icon ion-android-bulb"></i>{{ 'explanations_title' | translate }}
+        <i class="icon ion-android-arrow-dropdown" ng-click="toggleExplanation()"></i>
+      </ion-item>
+      <div class="item item-body" id="details-list-item-container7" ng-show="explanation">
+        <div id="details-markdown14" class="show-list-numbers-and-dots">
+          <blockquote>
+            <p style="margin-top:0px;color:#000000;">
+              <strong>1.</strong> {{ 'explanation_details_1' | translate }}</p>
+          </blockquote>
+
+          <hr>
+
+          <blockquote>
+            <p style="color:#000000;">
+              <strong>2.</strong> {{ 'explanation_details_2' | translate }}</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

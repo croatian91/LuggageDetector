@@ -1,0 +1,34 @@
+{
+	"home": "Home",
+	"settings": "Settings",
+	"explanations_title": "Explanations",
+
+	"add": "Add",
+	"favorites_title": "Favorites",
+	"no_device_in_favorites": "No divice in favorites",
+	"rename": "Rename",
+	"delete": "Delete",
+	"explanation_home_1": "Appuyez et maintenez sur le bouton camera situé sur le haut de l'appareil jusqu'à entendre deux bips sonores.",
+	"explanation_home_2_1": "Click on the button",
+	"explanation_home_2_2": "dans le coin droit en haut de votre smartphone pour scanner.",
+	
+	"search_title": "Search",
+	"update_title": "Update",
+	"notification_title": "Notification",
+	"language_title": "Language",
+	"duration": "Duration: ",
+	"vibration": "Vibration",
+	"beeps": "Beeps sound",
+	
+	"explanation_details_1": "Appuyez sur le coeur en haut à droite pour ajouter/supprimer l'émeteur des favoris.",
+	"explanation_details_2": "L'affichage de la distance est approximative.",
+	
+	"device_name_title": "Device's name: ",
+	"device_name_example": "i.e john's luggage",
+	"device_name_placeholder": "i.e john's luggage",
+
+	"detected_devices_title": "Detected devices",
+	"none": "None",
+	"retry": "Retry",
+	"explanation_devices_1": "Appuyez sur l'un des appareils affiché dans la liste pour l'ajouter dans les favoris."
+}
